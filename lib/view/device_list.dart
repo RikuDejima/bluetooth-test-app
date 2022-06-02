@@ -1,5 +1,5 @@
 import 'package:bocco_bluetooth_test/view/service_list.dart';
-import 'package:bocco_bluetooth_test/logic/view_model/device_list_model.dart';
+import 'package:bocco_bluetooth_test/view_model/device_list_model.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_blue/flutter_blue.dart';
@@ -36,7 +36,8 @@ class DeviceListScreen extends StatelessWidget {
                                   .map(
                                     (result) => ListTile(
                                       onTap: () => Navigator.of(context)
-                                          .pushNamed('/service_list', arguments: result),
+                                          .pushNamed('/service_list',
+                                              arguments: result),
                                       title: Text(
                                           "${result.device.name} ${result.advertisementData.serviceUuids}"),
                                       subtitle: Text("${result.rssi}"),

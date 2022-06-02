@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:bocco_bluetooth_test/logic/view_model/characteristic_detail_model.dart';
+import 'package:bocco_bluetooth_test/view_model/characteristic_detail_model.dart';
 import 'package:flutter_blue/flutter_blue.dart';
 import 'package:provider/provider.dart';
 
@@ -32,8 +32,10 @@ class CharcteristicDetail extends StatelessWidget {
                       children: [
                         Center(
                           child: ElevatedButton(
-                            child: model.ableWrite ? Text('write') : Text('read'),
-                            onPressed: model.ableWrite ? model.write : model.read,
+                            child:
+                                model.ableWrite ? Text('write') : Text('read'),
+                            onPressed:
+                                model.ableWrite ? model.write : model.read,
                           ),
                         ),
                       ],

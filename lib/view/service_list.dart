@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:bocco_bluetooth_test/logic/view_model/service_list_model.dart';
+import 'package:bocco_bluetooth_test/view_model/service_list_model.dart';
 import 'package:flutter_blue/flutter_blue.dart';
 import 'package:provider/provider.dart';
 
